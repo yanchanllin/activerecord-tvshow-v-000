@@ -1,5 +1,5 @@
 class Show < ActiveRecord::Base
-end
+
 def highest_rating
 Show.maximum(:rating)
 end
@@ -20,4 +20,5 @@ def popular_shows
 end
 def shows_by_alphabetical_order
   Show.order(created_at: :asc)
+end
 end
