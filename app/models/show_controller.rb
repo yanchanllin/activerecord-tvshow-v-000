@@ -17,5 +17,5 @@ def popular_shows
   Show.where("rating > ?", 5)
 end
 def shows_by_alphabetical_order
-  Show.order(:create_at ASC)
+  Show.order(created_at: :asc)
 end 
